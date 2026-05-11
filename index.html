@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia Viagens</title>
+    <title>Agencia Viagens - DevStart</title>
 </head>
+
 <body>
-    
+    <header>
+        <!-- Navegação Mínima -->
+        <nav>
+            <ul>
+                <!-- Navegação Interna apontando para os IDs -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#minha-viagem">Minha Viagem</a></li>
+                <li><a href="#nos-encontre">Nos Encontre</a></li>
+                <li><a href="#conselhos">Conselhos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: BANNER -->
+        <section id="home">
+            <div class="banner-content">
+                <h1>Vilarejos Inesquecíveis</h1>
+                <p>Fuja da rotina e descubra a magia das cidades europeias clássicas.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: MINHA VIAGEM -->
+        <section id="minha-viagem">
+            <h2>Minha Viagem</h2>
+            <p>Monte o roteiro perfeito e personalizado para as suas férias.</p>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Europa Clássica</h3>
+                    <p>Itália, França e Espanha em um roteiro de 15 dias inesquecíveis.</p>
+                </article>
+                <article class="card">
+                    <h3>Leste Europeu</h3>
+                    <p>Mergulhe na cultura fascinante de Praga, Budapeste e Viena.</p>
+                </article>
+            </div>
+
+            <!-- Link de voltar ao topo -->
+            <a href="#home" class="btn-topo">Voltar ao Topo</a>
+        </section>
+
+        <!-- SEÇÃO 3: NOS ENCONTRE -->
+        <section id="nos-encontre">
+            <h2>Nos Encontre</h2>
+            <p>Venha tomar um café conosco e planejar sua próxima aventura.</p>
+
+            <!-- Tag semântica aside para informações complementares de contato -->
+            <aside style="margin-top: 2rem; text-align: left;">
+                <h3>Nossos Escritórios:</h3>
+                <p>📍 Sede Principal: Rua das Viagens, 123 - Centro.</p>
+                <p>📞 Telefone: (00) 1234-5678</p>
+                <p>✉️ E-mail: contato@tripme.com</p>
+            </aside>
+
+            <!-- Link de voltar ao topo -->
+            <a href="#home" class="btn-topo">Voltar ao Topo</a>
+        </section>
+
+        <!-- SEÇÃO 4: CONSELHOS -->
+        <section id="conselhos">
+            <h2>Conselhos de Viagem</h2>
+            <p>Dicas de ouro para não passar perrengue na sua viagem.</p>
+
+            <div class="cards-container">
+                <!-- Usando o ID para destacar este card específico -->
+                <article class="card" id="card--destaque">
+                    <!-- Requisito 4: Acessibilidade com a tag ALT na imagem -->
+                    <img src="https://images.unsplash.com/photo-1553531384-cc64ac80f931?auto=format&fit=crop&w=600&q=80"
+                        alt="Mochila amarela de viagem encostada em uma parede de pedra rústica">
+                    <h3>Bagagem Leve</h3>
+                    <p>As ruas de pedra da Europa são lindas, mas arrastar malas de 32kg nelas não é. Leve apenas o
+                        essencial!</p>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1498579150354-977475b7e2b3?auto=format&fit=crop&w=600&q=80"
+                        alt="Câmera fotográfica apontada para uma paisagem">
+                    <h3>Documentação</h3>
+                    <p>Sempre tenha fotos do seu passaporte salvas na nuvem e leve uma cópia impressa com você.</p>
+                </article>
+            </div>
+
+            <!-- Link de voltar ao topo -->
+            <a href="#home" class="btn-topo">Voltar ao Topo</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TripMe. Construído com HTML5 e CSS3 Semântico.</p>
+    </footer>
 </body>
+
 </html>
